@@ -1,0 +1,145 @@
+
+export default {
+  content: [
+  './index.html',
+  './src/**/*.{js,ts,jsx,tsx}'
+],
+  theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        md: '1.5rem',
+        lg: '2rem',
+      },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1200px',
+        '2xl': '1200px',
+      },
+    },
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        mono: ['JetBrains Mono', 'Menlo', 'Consolas', 'monospace'],
+        display: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      fontSize: {
+        xs: ['12px', '1.375'],
+        sm: ['14px', '1.5'],
+        base: ['16px', '1.5'],
+        lg: ['20px', '1.5'],
+        xl: ['24px', '1.25'],
+        '2xl': ['32px', '1.25'],
+        '3xl': ['40px', '1.25'],
+        '4xl': ['48px', '1.25'],
+        '5xl': ['64px', '1.25'],
+      },
+      colors: {
+        primary: {
+          DEFAULT: '#363a30',
+          light: '#3f4339',
+          dark: '#2a2e24',
+          50: '#f2f3f1',
+          100: '#e4e6e2',
+          200: '#c9cdc4',
+          300: '#a3a99a',
+          400: '#7d8472',
+          500: '#5c6352',
+          600: '#4a5040',
+          700: '#363a30',
+          800: '#2e3228',
+          900: '#252820',
+        },
+        accent: {
+          DEFAULT: '#e94560',
+          hover: '#d63851',
+          light: '#fde8ec',
+          50: '#fef1f3',
+          100: '#fde8ec',
+          200: '#fbd0d8',
+          300: '#f7a1b4',
+          400: '#f17290',
+          500: '#e94560',
+          600: '#d63851',
+          700: '#b42d43',
+          800: '#962739',
+          900: '#7d2433',
+        },
+        success: {
+          DEFAULT: '#16c784',
+          light: '#e6f9f0',
+          50: '#e6f9f0',
+          500: '#16c784',
+          600: '#12a36c',
+        },
+        warning: {
+          DEFAULT: '#f5a623',
+          light: '#fef5e7',
+          50: '#fef5e7',
+          500: '#f5a623',
+          600: '#d9901a',
+        },
+        surface: {
+          DEFAULT: '#ffffff',
+          elevated: '#ffffff',
+          bg: '#fafafa',
+        },
+      },
+      borderRadius: {
+        sm: '6px',
+        md: '8px',
+        lg: '12px',
+        xl: '16px',
+      },
+      boxShadow: {
+        'sm': '0 1px 2px rgba(0,0,0,0.05)',
+        'DEFAULT': '0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04)',
+        'md': '0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05)',
+        'lg': '0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.04)',
+        'xl': '0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.04)',
+        '2xl': '0 25px 50px -12px rgba(0,0,0,0.2)',
+        'card': '0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04)',
+        'card-hover': '0 10px 25px -5px rgba(0,0,0,0.1), 0 4px 10px -4px rgba(0,0,0,0.04)',
+        'drawer': '-4px 0 25px rgba(0,0,0,0.12)',
+        'modal': '0 20px 60px -15px rgba(0,0,0,0.25)',
+      },
+      spacing: {
+        '18': '4.5rem',
+        '88': '22rem',
+        '128': '32rem',
+      },
+      transitionDuration: {
+        '250': '250ms',
+        '350': '350ms',
+      },
+      keyframes: {
+        'fade-up': {
+          '0%': { opacity: '0', transform: 'translateY(16px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        'slide-in-right': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        'scale-in': {
+          '0%': { opacity: '0', transform: 'scale(0.95)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+      },
+      animation: {
+        'fade-up': 'fade-up 0.4s ease-out',
+        'fade-in': 'fade-in 0.2s ease-out',
+        'slide-in-right': 'slide-in-right 0.3s ease-out',
+        'scale-in': 'scale-in 0.2s ease-out',
+      },
+    },
+  },
+  plugins: [],
+}
