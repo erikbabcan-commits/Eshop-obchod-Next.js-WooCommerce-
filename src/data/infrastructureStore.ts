@@ -289,7 +289,80 @@ export const MOCK_HEALTH_CHECKS: HealthCheck[] = [
 
 
 // Activity logs — these would be fetched from a server endpoint in production.
-export const MOCK_ACTIVITY_LOGS: ActivityLog[] = [];
+export const MOCK_ACTIVITY_LOGS: ActivityLog[] = [
+  {
+    id: 'log_1',
+    timestamp: new Date(Date.now() - 1000 * 60 * 5).toISOString(),
+    action: 'Admin login',
+    category: 'auth',
+    details: 'Admin user logged in successfully',
+    user: 'admin@example.com',
+    severity: 'info',
+  },
+  {
+    id: 'log_2',
+    timestamp: new Date(Date.now() - 1000 * 60 * 30).toISOString(),
+    action: 'Product updated',
+    category: 'config',
+    details: 'Product "Whey Protein 1kg" price updated from €29.99 to €27.99',
+    user: 'admin@example.com',
+    severity: 'success',
+  },
+  {
+    id: 'log_3',
+    timestamp: new Date(Date.now() - 1000 * 60 * 60).toISOString(),
+    action: 'Order status changed',
+    category: 'system',
+    details: 'Order #1042 status changed from "processing" to "shipped"',
+    user: 'system',
+    severity: 'info',
+  },
+  {
+    id: 'log_4',
+    timestamp: new Date(Date.now() - 1000 * 60 * 90).toISOString(),
+    action: 'Database backup',
+    category: 'database',
+    details: 'Scheduled database backup completed successfully (42 MB)',
+    user: 'system',
+    severity: 'success',
+  },
+  {
+    id: 'log_5',
+    timestamp: new Date(Date.now() - 1000 * 60 * 120).toISOString(),
+    action: 'Plugin activated',
+    category: 'config',
+    details: 'WooCommerce Stripe Gateway v7.6.1 activated',
+    user: 'admin@example.com',
+    severity: 'info',
+  },
+  {
+    id: 'log_6',
+    timestamp: new Date(Date.now() - 1000 * 60 * 180).toISOString(),
+    action: 'Failed login attempt',
+    category: 'auth',
+    details: 'Failed login attempt from IP 185.220.101.33',
+    user: 'unknown',
+    severity: 'warning',
+  },
+  {
+    id: 'log_7',
+    timestamp: new Date(Date.now() - 1000 * 60 * 240).toISOString(),
+    action: 'Deployment triggered',
+    category: 'deploy',
+    details: 'Production deployment v2.4.1 triggered via CI/CD pipeline',
+    user: 'ci-bot',
+    severity: 'info',
+  },
+  {
+    id: 'log_8',
+    timestamp: new Date(Date.now() - 1000 * 60 * 300).toISOString(),
+    action: 'API error',
+    category: 'error',
+    details: 'WooCommerce REST API returned 500 on /wp-json/wc/v3/orders — retrying',
+    user: 'system',
+    severity: 'error',
+  },
+];
 
 export const DEFAULT_INFRASTRUCTURE: InfrastructureConfig = {
   activeBackend: 'supabase',

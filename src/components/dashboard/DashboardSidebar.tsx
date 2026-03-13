@@ -12,7 +12,8 @@ import {
   DatabaseIcon,
   RocketIcon,
   KeyIcon,
-  ActivityIcon } from
+  ActivityIcon,
+  ScrollTextIcon } from
 'lucide-react';
 export function DashboardSidebar() {
   const storeNavItems = [
@@ -46,6 +47,11 @@ export function DashboardSidebar() {
     to: '/dashboard/settings',
     label: 'Impostazioni API',
     icon: SettingsIcon
+  },
+  {
+    to: '/dashboard/logs',
+    label: 'Logs & Audit Trail',
+    icon: ScrollTextIcon
   }];
 
   const adminNavItems = [
