@@ -13,6 +13,7 @@ import { DatabasePanel } from '../components/dashboard/DatabasePanel';
 import { DeploymentPanel } from '../components/dashboard/DeploymentPanel';
 import { EnvironmentPanel } from '../components/dashboard/EnvironmentPanel';
 import { HealthPanel } from '../components/dashboard/HealthPanel';
+import { LogsPanel } from '../components/dashboard/LogsPanel';
 import { AuthGuard } from '../components/dashboard/AuthGuard';
 import { CubeLogo } from '../components/CubeLogo';
 export function DashboardPage() {
@@ -62,6 +63,7 @@ export function DashboardPage() {
               <Route path="/deployment" element={<DeploymentPanel />} />
               <Route path="/environment" element={<EnvironmentPanel />} />
               <Route path="/health" element={<HealthPanel />} />
+              <Route path="/logs" element={<LogsPanel />} />
 
               <Route path="*" element={<Navigate to="/dashboard" replace />} />
             </Routes>
